@@ -21,7 +21,7 @@
   <img src="assets/bar.png" alt="Close-up of the bar" width="100%">
 </p>
 
-## ✨ About
+##  About
 
 A minimal, self-contained Waybar setup with a **macOS "solid" look**: floating rounded pills, a
 monolithic group of modules on the right, and a live clock in the center. Everything is driven by
@@ -29,16 +29,16 @@ plain JSONC + CSS — no frameworks, no build step.
 
 ### Features
 
-- 🎛 **Floating pills** — every module is a rounded, translucent card with a subtle border and shadow
-- 🧩 **Seamless right group** — bluetooth / network / audio / backlight / battery are merged into one
+-  **Floating pills** — every module is a rounded, translucent card with a subtle border and shadow
+-  **Seamless right group** — bluetooth / network / audio / backlight / battery are merged into one
   monolith with only the outer corners rounded
-- 🕐 **Live clock** — seconds-precision center module with date and weekday
-- 📊 **CPU sparkline** — usage plus a block-graph icon that grows with the load
-- 🍅 **Pomodoro timer** — start / pause / reset straight from the bar
-- 🔋 **Battery states** — warning at 30 %, critical at 15 %, charging highlighted in green
-- 🖱 **Click actions** — Bluetooth manager, network editor, volume control, `htop`, screen lock
+-  **Live clock** — seconds-precision center module with date and weekday
+-  **CPU sparkline** — usage plus a block-graph icon that grows with the load
+-  **Pomodoro timer** — start / pause / reset straight from the bar
+-  **Battery states** — warning at 30 %, critical at 15 %, charging highlighted in green
+-  **Click actions** — Bluetooth manager, network editor, volume control, `htop`, screen lock
 
-## 📁 Structure
+##  Structure
 
 ```text
 waybar-config/
@@ -55,7 +55,7 @@ waybar-config/
 └── assets/              # screenshots used in this README
 ```
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Why |
 | --- | --- |
@@ -71,7 +71,7 @@ waybar-config/
 > Only `waybar`, `hyprland` and a Nerd Font are strictly required — everything else powers a click
 > action or an optional module.
 
-## 🚀 Install
+##  Install
 
 ### Option A — clone straight into your config dir
 
@@ -120,14 +120,14 @@ killall waybar && waybar &
 | `backlight` | right | 7-step brightness icons |
 | `battery` | right | states: warning 30 %, critical 15 % |
 
-## 🗃 Archive
+##  Archive
 
 `archive/` contains an earlier setup: a **pywal**-driven theme with the module pack from
 [ml4w / Stephan Raabe](https://github.com/StephanRaabe) (`modules.json`, `config.jsonc`).
 It is not loaded by the current config, but is kept in case you want a fully dynamic,
 wallpaper-based color scheme.
 
-## 📄 License
+##  License
 
 Released under the [MIT License](LICENSE) — feel free to copy, tweak and ship your own version.
 
