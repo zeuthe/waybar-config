@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⌘ waybar-config
+#  waybar-config
 
 **Плавающая панель в стиле macOS для [Hyprland](https://hyprland.org) на основе [Waybar](https://github.com/Alexays/Waybar)**
 
@@ -23,7 +23,7 @@
   <img src="assets/bar.png" alt="Панель крупным планом" width="100%">
 </p>
 
-## ✨  проекте
+##    о проекте
 
 Самодостаточная настройка Waybar в стиле **macOS «solid»**: плавающие скруглённые «пилюли»,
 слитная группа модулей справа и живые часы по центру. Всё на чистом JSONC + CSS — без
@@ -67,7 +67,7 @@ waybar-config/
 | [blueman](https://github.com/blueman-project/blueman) | клик по `bluetooth` |
 | [network-manager-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) | клик по `network` |
 | [pavucontrol](https://github.com/pulseaudio/pavucontrol) | клик по `pulseaudio` |
-| [waybar-module-pomodoro](https://github.com/kbajnok/waybar-module-pomodoro) | 🍅 модуль |
+| [waybar-module-pomodoro](https://github.com/kbajnok/waybar-module-pomodoro) |  модуль |
 | [playerctl](https://github.com/altdesktop/playerctl) | опциональный `custom/music` |
 
 > Обязательны только `waybar`, `hyprland` и Nerd Font — остальное нужно для кликов и
