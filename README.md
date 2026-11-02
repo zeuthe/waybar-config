@@ -65,7 +65,7 @@ waybar-config/
 | [blueman](https://github.com/blueman-project/blueman) | `bluetooth` click action |
 | [network-manager-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) | `network` click action |
 | [pavucontrol](https://github.com/pulseaudio/pavucontrol) | `pulseaudio` click action |
-| [waybar-module-pomodoro](https://github.com/kbajnok/waybar-module-pomodoro) | 🍅 module |
+| [waybar-module-pomodoro](https://github.com/kbajnok/waybar-module-pomodoro) |  module |
 | [playerctl](https://github.com/altdesktop/playerctl) | optional `custom/music` module |
 
 > Only `waybar`, `hyprland` and a Nerd Font are strictly required — everything else powers a click
@@ -96,7 +96,7 @@ gets lost.
 killall waybar && waybar &
 ```
 
-## 🎨 Customization
+##  Customization
 
 - **Colors** — edit `#waybar` and the module selectors in [`style.css`](style.css).
   The palette in [`macchiato.css`](macchiato.css) (Catppuccin Macchiato) is handy as a reference.
