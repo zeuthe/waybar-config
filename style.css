@@ -1,0 +1,115 @@
+/* --- macOS Solid Style (Final Polish - Seamless Right) --- */
+
+/* --- Global Styles --- */
+* {
+  font-family: 'SF Pro Text', 'Inter', 'SF Pro Icons', 'NotoSans Nerd Font', sans-serif;
+  font-size: 13px;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Waybar Container --- */
+#waybar {
+  background: transparent;
+  color: #ffffff;
+  margin: 0px;
+  font-weight: 500;
+}
+
+/* --- Base Style for All Modules --- */
+#workspaces,
+#custom-uptime,
+#cpu,
+#clock,
+#custom-pomodoro,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+  background-color: rgba(28, 28, 30, 0.85);
+  padding: 0.3rem 0.8rem;
+  margin: 5px 0px; 
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+/* --- Left Modules --- */
+#workspaces {
+  margin-left: 10px; /* Отступ от левого края экрана */
+  margin-right: 5px;
+  padding: 3px;
+}
+
+#custom-uptime, #cpu {
+  margin-right: 5px;
+  color: #ffffff;
+}
+
+/* --- Center Module (Clock) --- */
+#clock {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.3rem 1.2rem;
+}
+
+/* --- Right Modules (Seamless Monolith) --- */
+/* Убираем рамки и скругления у внутренних элементов, чтобы "слить" их */
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 0px;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+
+/* Первый элемент в правой группе (закругление слева) */
+#bluetooth {
+  margin-left: 5px; 
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Последний элемент в правой группе (закругление справа + отступ от края экрана) */
+#battery {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 10px; /* Тот самый отступ от края экрана */
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Разделители: делаем очень тонкими и едва заметными, чтобы не было "швов" */
+#bluetooth, #pulseaudio, #backlight, #network, #custom-lock {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Special States --- */
+#network.disconnected { color: #ff453a; }
+#battery.charging { color: #30d158; }
+#battery.warning:not(.charging) { color: #ff453a; }
+#custom-pomodoro.work { color: #ffd60a; }
+
+/* --- Hover --- */
+#workspaces button:hover, #clock:hover, #bluetooth:hover, #pulseaudio:hover, #battery:hover {
+  background-color: rgba(44, 44, 46, 0.95);
+}
+
+/* --- Tooltip --- */
+tooltip {
+  background-color: rgba(28, 28, 30, 0.95);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
